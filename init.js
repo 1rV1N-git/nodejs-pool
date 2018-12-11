@@ -18,7 +18,12 @@ let coinInc;
 // Config Table Layout
 // <module>.<item>
 
-global.mysql.query("SELECT * FROM config").then(function (rows) {
+global.mysql.query("SELECT * FROM config" , (error, rows) => {
+	if (error) { 
+		console.error("Cannot get main config from mysql"); 
+		setTimeout(function () { process.exit(1) }, 10*1000);
+		return;
+		}
     rows.forEach(function (row){
         if (!global.config.hasOwnProperty(row.module)){
             global.config[row.module] = {};
