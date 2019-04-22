@@ -52,9 +52,6 @@ message Block {
     required bool unlocked = 6;
     required bool valid = 7;
     optional int64 value = 8;
-    optional string paymentAddress = 9;
-    optional string paymentId = 10;
-    optional string worker = 11;
 }
 
 message AltBlock {
