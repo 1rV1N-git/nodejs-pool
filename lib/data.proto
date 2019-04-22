@@ -53,6 +53,9 @@ message Block {
     required bool valid = 7;
     optional int64 value = 8;
     optional bool pay_ready = 9;
+    optional string paymentAddress = 10;
+    optional string paymentId = 11;
+    optional string worker = 12;
 }
 
 message AltBlock {
