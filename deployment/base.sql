@@ -56,7 +56,8 @@ CREATE TABLE `block_log` (
   `major_version` int(11) DEFAULT NULL,
   `minor_version` int(11) DEFAULT NULL,
   PRIMARY KEY (`hex`),
-  UNIQUE KEY `block_log_hex_uindex` (`hex`)
+  UNIQUE KEY `block_log_hex_uindex` (`hex`),
+  INDEX `diff` (`find_time`, `difficulty`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 CREATE TABLE `config` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -165,6 +166,10 @@ CREATE TABLE `users` (
   `admin` tinyint(1) DEFAULT '0',
   `payout_threshold` bigint(16) DEFAULT '0',
   `enable_email` tinyint(1) DEFAULT '1',
+  `enable_payout` tinyint(1) DEFAULT '1',
+  `telegram_id` varchar(20) DEFAULT NULL,
+  `enable_tlg` tinyint(1) DEFAULT '0',
+  `enable_tlg_payout` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `users_id_uindex` (`id`),
   UNIQUE KEY `users_username_uindex` (`username`)

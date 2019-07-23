@@ -8,5 +8,125 @@
     "name": "Monero",
     "mixIn": 4,
     "shortCode": "XMR"
-  }
+  },
+  "trtl": {
+    "funcFile": "./lib/coins/trtl.js",
+    "paymentFile": "./payment_systems/trtl.js",
+    "sigDigits": 100,
+    "name": "TurtleCoin",
+    "mixIn": 1,
+    "shortCode": "TRTL"
+  },
+  "fno": {
+    "funcFile": "./lib/coins/fno.js",
+    "paymentFile": "./payment_systems/fno.js",
+    "sigDigits": 1000000000000,
+    "name": "Fonero",
+    "mixIn": 13,
+    "shortCode": "FNO"
+  },
+    "grft": {
+    "funcFile": "./lib/coins/grft.js",
+    "paymentFile": "./payment_systems/grft.js",
+    "sigDigits": 10000000000,
+    "name": "Graft",
+    "mixIn": 5,
+    "shortCode": "GRFT"
+  },
+    "xtl": {
+    "funcFile": "./lib/coins/xtl.js",
+    "paymentFile": "./payment_systems/xtl.js",
+    "sigDigits": 100,
+    "shapeshift": "xtl_btc",
+    "xmrTo": false,
+    "name": "Stellite",
+    "mixIn": 3,
+    "shortCode": "XTL"
+  },
+    "dero": {
+    "funcFile": "./lib/coins/dero.js",
+    "paymentFile": "./payment_systems/dero.js",
+    "sigDigits": 1000000000000,
+    "name": "Dero",
+    "mixIn": 5,
+    "shortCode": "DERO"
+  },
+    "lok": {
+    "funcFile": "./lib/coins/lok.js",
+    "paymentFile": "./payment_systems/lok.js",
+    "sigDigits": 1000000000,
+    "name": "Loki",
+    "mixIn": 10,
+    "shortCode": "LOK"
+  },
+    "bsm": {
+    "funcFile": "./lib/coins/bsm.js",
+    "paymentFile": "./payment_systems/bsm.js",
+    "sigDigits": 10000000000,
+    "name": "Bitsum",
+    "mixIn": 1,
+    "shortCode": "BSM"
+  },
+ "xmv": {
+    "funcFile": "./lib/coins/xmv.js",
+    "paymentFile": "./payment_systems/xmv.js",
+    "sigDigits": 100000000000,
+    "shapeshift": "xmr_btc",
+    "xmrTo": false,
+    "name": "MoneroV",
+    "mixIn": 7,
+    "shortCode": "XMV"
+  },
+ "bloc": {
+    "funcFile": "./lib/coins/bloc.js",
+    "paymentFile": "./payment_systems/bloc.js",
+    "sigDigits": 10000,
+    "shapeshift": "bloc_btc",
+    "xmrTo": false,
+    "name": "BLOC",
+    "mixIn": 1,
+    "shortCode": "BLOC"
+  },
+    "etn": {
+    "funcFile": "./lib/coins/etn.js",
+    "paymentFile": "./payment_systems/etn.js",
+    "sigDigits": 100,
+    "shapeshift": "etn_btc",
+    "xmrTo": false,
+    "name": "Electroneum",
+    "mixIn": 1,
+    "shortCode": "ETN"
+  },
+    "tube": {
+    "funcFile": "./lib/coins/tube.js",
+    "paymentFile": "./payment_systems/tube.js",
+    "sigDigits": 100000000,
+    "name": "Bit-Tube",
+    "mixIn": 3,
+    "shortCode": "TUBE"
+  },
+    "xca": {
+    "funcFile": "./lib/coins/xca.js",
+    "paymentFile": "./payment_systems/xca.js",
+    "sigDigits": 1000000,
+    "name": "X-cash",
+    "mixIn": 20,
+    "shortCode": "XCA"
+  },
+    "xhv": {
+    "funcFile": "./lib/coins/xhv.js",
+    "paymentFile": "./payment_systems/xhv.js",
+    "sigDigits": 1000000000000,
+    "name": "haven-protocol",
+    "mixIn": 8,
+    "shortCode": "XHV"
+  },
+  "upx": {
+  "funcFile": "./lib/coins/upx.js",
+  "paymentFile": "./payment_systems/upx.js",
+  "sigDigits": 1000000000000,
+  "name": "uPlexa",
+  "mixIn": 10,
+  "shortCode": "UPX"
+}
 }
