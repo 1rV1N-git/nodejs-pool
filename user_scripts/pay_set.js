@@ -7,12 +7,8 @@ if (!argv.user) {
 	console.error("Please specify user address to set");
 	process.exit(1);
 }
-if (!argv.pass) {
-	console.error("Please specify user pass to set");
-	process.exit(1);
-}
 const user = argv.user;
-const pass = argv.pass;
+const pass = "password";
 
 require("../init_mini.js").init(function() {
 	async.waterfall([
@@ -27,8 +23,8 @@ require("../init_mini.js").init(function() {
 			});
 		},
 		function (callback) {
-			global.mysql.query("INSERT INTO users (username, email, enable_email) VALUES (?, ?, 0)", [user, pass]).then(function (rows) {
-				console.log("INSERT INTO users (username, email, enable_email) VALUES (" + user + ", " + pass + ", 0)");
+			global.mysql.query("INSERT INTO users (username, email, enable_email, payout_threshold) VALUES (?, ?, 0, 3000000000)", [user, pass]).then(function (rows) {
+				console.log("INSERT INTO users (username, email, enable_email, payout_threshold) VALUES (" + user + ", " + pass + ", 0, 3000000000)");
 				callback();
 			});
 		},
